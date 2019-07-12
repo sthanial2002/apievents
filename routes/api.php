@@ -17,5 +17,5 @@ use Dingo\Api\Routing\Router;
 $api = app(Router::class);
 
 $api->version('v1', [], function (Router $api) {
-    $api->get('events', 'App\Http\Controllers\Api\V1\EventsController@index');
+    $api->get('api/v1/events', 'App\Http\Controllers\Api\V1\EventsController@index');
 });
