@@ -14,6 +14,6 @@ class EventsController extends Controller
     public function list() : View
     {
         $events = $this->api->get('/events/');
-        return dd($events->toJson(JSON_PRETTY_PRINT));
+        return \View::make('events.list', compact('events'));
     }
 }
