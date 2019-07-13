@@ -14,12 +14,13 @@
         "laravel/tinker": "~1.0",
         "mercuryseries/flashy": "^1.0",
         "mercuryseries/laravel-helpers": "^1.0",
-        "dingo/api": "v2.0.0-alpha1"
+        "dingo/api": "v2.0.0-alpha1",
+        "fzaninotto/faker": "~1.4"
+
     },
-    "require": {
+    "require-dev": {
         "barryvdh/laravel-debugbar": "^3.1",
         "filp/whoops": "~2.0",
-        "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~6.0"
     },
