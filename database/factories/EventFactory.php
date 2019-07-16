@@ -22,7 +22,7 @@ $factory->define(App\Event::class, function (Faker $faker) {
     }
 
     return [
-        'urlToImage' => $faker->image($filePath,400,200,null,false),
+        'urlToImage' => $faker->image($filePath,400,200),
         'title' => $faker->sentence,
         'description' => $faker->paragraph
     ];
