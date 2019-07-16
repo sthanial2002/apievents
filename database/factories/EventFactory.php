@@ -16,7 +16,7 @@ use Faker\Generator as Faker;
 $factory->define(App\Event::class, function (Faker $faker) {
 
 
-    $filePath = storage_path('urlToImage');
+    $filePath = storage_path('images');
 
     if (!File::exists($filePath)) {
         File::makeDirectory($filePath);
