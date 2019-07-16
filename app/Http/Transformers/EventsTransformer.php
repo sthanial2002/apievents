@@ -11,6 +11,7 @@ class EventsTransformer extends TransformerAbstract
     {
         return [
           'id' => $event->id,
+          'urlToImage' => $event->urlToImage,
           'title' => $event->title,
           'description' => $event->description
         ];

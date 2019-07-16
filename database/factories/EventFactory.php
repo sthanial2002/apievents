@@ -15,9 +15,15 @@ use Faker\Generator as Faker;
 
 $factory->define(App\Event::class, function (Faker $faker) {
 
+    $filePath = storage_path('app/public/images/urlToImage');
+
+    if (!File::exists($filePath)) {
+        File::makeDirectory($filePath);
+    }
 
     return [
-        'title' => $faker->sentence(10),
-        'description' => $faker->sentence(50)
+        'urlToImage' => $faker->image($filePath,400,200,null,false),
+        'title' => $faker->sentence,
+        'description' => $faker->paragraph
     ];
 });

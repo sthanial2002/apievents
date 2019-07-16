@@ -11,7 +11,7 @@
 
                 <ul>{
                     @foreach($events as $event)
-                       { {{ $event->id }} - {{ $event->title}} - {{ $event->description }}}
+                      <li> {{ $event->id }} - {{ $event->urlToImage }} - {{ $event->title}} - {{ $event->description }} </li>
                     @endforeach
                 </ul>
             </div>

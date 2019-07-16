@@ -14,7 +14,8 @@ class CreateEventsTable extends Migration
     public function up()
     {
         Schema::create('events', function (Blueprint $table) {
-            $table->increments('id')->toSring();
+            $table->increments('id');
+            $table->string('urlToImage');
             $table->string('title');
             $table->text('description');
         });
